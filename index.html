@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <script defer src='main.js'></script>
+    <title>YT - 영화의 모든 것</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title"><a href='./index.html'>연탄극장</a></h1>
+        <nav>
+            <ul>
+                <li>
+                    <input 
+                    type="button" value="예매하기" class="ticketing"></li>
+                <li>
+                    <input 
+                    type="button" value="예매차트" class="currentChart">
+                </li>
+                <li>
+                    <input class="nextChart" type="button" value="상영예정">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>추천 영화</h2>
+        <div class="mainMovie"></div>
+        <div class="movieDescription"></div>
+    </main>
+    <section class ='ticket'>
+    <label for="selecting">영화 선택</label>
+    <select id='selecting'>
+        <option>싱크홀</option>
+        <option>모가디슈</option>
+        <option>프리가이</option>
+        <option>더 수어사이드 스쿼드</option>
+        <option>보스베이비2</option>
+        <option>블랙 위도우</option>
+        <option>그린나이트</option>
+        <option>진구의 신공룡</option>
+        <option>블랙핑크 더 무비</option>
+        <option>암살자들</option>
+    </select>
+    <label for="selectedDate">날짜 선택</label>
+    <input type='date' id="selectedDate">
+    <input type="button" value='좌석선택' class='selectNum'>
+    <div class ='seatNumber'>
+        <ul>
+            <li>A1</li>
+            <li>A2</li>
+            <li>A3</li>
+            <li>A4</li>
+            <li>A5</li>
+        </ul>
+        <ul>
+            <li>B1</li>
+            <li>B2</li>
+            <li>B3</li>
+            <li>B4</li>
+            <li>B5</li>
+        </ul>
+        <ul>
+            <li>C1</li>
+            <li>C2</li>
+            <li>C3</li>
+            <li>C4</li>
+            <li>C5</li>
+        </ul>
+        <ul>
+            <li>D1</li>
+            <li>D2</li>
+            <li>D3</li>
+            <li>D4</li>
+            <li>D5</li>
+        </ul>
+        <ul>
+            <li>E1</li>
+            <li>E2</li>
+            <li>E3</li>
+            <li>E4</li>
+            <li>E5</li>
+        </ul>
+    </div>
+    <input id='subbutton' value='결제하기' type='button'>
+    </section>
+    
+    <div class ="selectedMovie">
+        <div id='smovie'></div>
+        <div id='sdate'></div>
+        <div id='sseat'></div>
+        <div id='money'></div>
+        <input id='sub' type='button' value='결제완료'>
+    </div>
+</body>
+</html>
